@@ -49,4 +49,5 @@
     * `docker network create skylla_default`
     * `docker-compose -f ./docker/docker-compose.dev.yml build` 
 * 启动服务
-    `docker-compose -f ./docker/docker-compose.dev.yml up`
+
+    * `docker-compose -f ./docker/docker-compose.dev.yml up`
