@@ -1,18 +1,19 @@
 version: "3.5"
 
 services:
-  ant-design-pro_dev:
+  skylla_test:
     ports:
       - 8005:8000
     build:
       context: ../
       dockerfile: Dockerfile.dev
     container_name: "skylla_test"
+    command: npm run start
     volumes:
       - ../src:/usr/src/app/src
       - ../config:/usr/src/app/config
       - ../mock:/usr/src/app/mock
-    networks:
-      default:
-        external:
-          name: skylla_default
+networks:
+  default:
+    external:
+      name: skylla_default
