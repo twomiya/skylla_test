@@ -40,10 +40,10 @@
     * 修改docker/docker-compose.dev.yml文件，把ant-design-pro修改为skylla_test
     * 在docker/docker-compose.dev.yml文件中添加server
     ```
-        networks:
-            default:
-                external:
-                    name: skylla_default
+    networks:
+      default:
+        external:
+          name: skylla_default
     ```
 * 准备工作
     * `docker network create skylla_default`
